@@ -5,7 +5,7 @@ package io.zipcoder.pets;
  */
 public class Pets {
 
-    private String petName;
+    protected String petName;
 
     public Pets(String name){
         this.petName = name;

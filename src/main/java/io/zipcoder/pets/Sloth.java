@@ -17,7 +17,7 @@ public class Sloth extends Pets {
 
     public String speak(){
 
-        return "What does the sloth say? Sloth speaks";
+        return "What does the sloth say? Sloth speaks...";
     }
 
 }

@@ -10,7 +10,7 @@ public class User {
 // declaring fields
 
     private int numberofPets;
-    private ArrayList<Pets> petKind;
+    private ArrayList<Pets> petKind = new ArrayList<>();
     private String petName;
     private String userName;
 
@@ -27,7 +27,7 @@ public class User {
         this.numberofPets = response;
     }
 
-    public void setPetKind(Pets response){
+    public void addPetKind(Pets response){
         this.petKind.add(response);
     }
 
@@ -53,5 +53,16 @@ public class User {
         return userName;
     }
 
+
+// Print current users list of pets
+
+    public void printPetList() {
+        int i =0;
+        for (Pets pet : petKind) {
+            System.out.println("You have a " + this.petKind.get(i).getClass().getName() + " named " + this.petKind.get(i).petName);
+            System.out.println(this.petKind.get(i).petName+" says: "+this.petKind.get(i).speak());
+            i++;
+            }
+        }
 
 }
