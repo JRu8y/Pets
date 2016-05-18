@@ -7,10 +7,6 @@ import java.util.*;
  */
 public class App {
 
-
-
-
-
     public static void engine(){
         Scanner scanner = new Scanner(System.in);
         int number = 0;
